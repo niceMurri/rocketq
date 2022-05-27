@@ -1,0 +1,62 @@
+ /*modal*/
+.modal-wrapper{
+    
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: rgba(4, 9, 17,0.8);
+    
+    visibility: hidden;
+    opacity: 0;
+} 
+.modal-wrapper.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-wrapper .modal{
+    
+    width: min(59.0rem, 90%);
+    background: var(--background);
+    border-radius: 8px;
+    text-align: center;
+}
+.modal{
+    padding: 6.4rem;
+}
+.modal h2{
+    margin-top: -1.1rem;
+    margin-bottom: 1.2rem;
+}
+.modal p{
+    color: var(--grey-dark);
+    font-family: 'Poppins',sans-serif;
+    margin-bottom: 2.4rem;
+}
+
+.modal form input{
+    padding: 1.3rem 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    border: 2px solid var(--blue);
+    outline: none;
+    width: min(100%, 30.2rem);
+    margin-bottom: 4.0rem;
+}
+#room-id{
+    outline: none;
+}
+.modal form .buttons{
+    justify-content: center;
+    gap: 8px;
+    display: flex;
+}
+.modal form .buttons div{
+    color: var(--grey-dark);
+}
